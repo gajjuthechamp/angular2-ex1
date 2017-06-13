@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
+$body_bg : #f8f8f8;
+$btn_color: #354145;
+$btn_hover_color: #f57306;;
+
+
+body {
+  background: $body_bg;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+
+  &:hover,&:active,,&:focus {
+    text-decoration: none;
+     cursor: pointer;
+  }
+
+}
+
+.btn{
+    background: $btn_color;
+    border: solid 1px $btn_color;
+
+    &:hover {
+      background: $btn_hover_color;
+      border: solid 1px $btn_hover_color;
+    }
+}
+
+
+

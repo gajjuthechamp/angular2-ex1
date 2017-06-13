@@ -1,24 +1,49 @@
 $nav_background : #364245;
+$nav_background_active : #495f64;
 $nav_color : #d5ddde;
 $nav_color_active : #fff;
+$cart_count_bg: #f57306;
 
 nav {
   width: 100%;
   background: $nav_background;
   color: $nav_color;
+  border-radius: 0 0 8px 8px;
 
-  ul li {
-    display: inline-block;
+  ul {
+    padding: 0 0 0 10px;
+    margin: 0;
+
+    li {
+      display: inline-block;
+    }
   }
 
   a {
       color: $nav_color;
-      display: inline-block;
+      display: block;
       padding: 10px;
       text-decoration: none;
 
       &:hover {
         color: $nav_color_active;
+        background: $nav_background_active;
       }
+   }
+
+  .cart {
+    float: right;
+
+    a {
+      display: inline-block;
+      padding: 10px 20px;
+    }
+
+    .count {
+      background: $cart_count_bg;
+       border-radius: 0 0 8px 0;
+    }
   }
+
+
 }

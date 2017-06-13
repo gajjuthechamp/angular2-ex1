@@ -1,0 +1,48 @@
+$cart_color: #445256;
+$cart_qty_price_color: #99a2a4;
+
+.cart {
+    color: $cart_color;
+    padding: 25px;
+
+    .heading {
+      font-size: 16px;
+
+      .cart-icon {
+        float: right;
+      }
+    }
+
+    ul {list-style: none; padding: 0;}
+
+    li {
+      overflow: hidden;
+      font-weight: bold;
+      font-size: 14px;
+      padding-bottom: 20px;
+
+        .desc {
+
+            width: 80%;
+            float: left;
+            padding-right: 20px;
+
+            span {
+              display: block;
+              font-weight: normal;
+              margin-top: 5px;
+              color: $cart_qty_price_color;
+            }
+        }
+
+        .img {
+            float: right;
+            vertical-align: middle;
+            ;
+            width: 20%;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}

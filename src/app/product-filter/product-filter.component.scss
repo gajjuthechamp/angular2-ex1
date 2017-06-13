@@ -1,0 +1,22 @@
+$color: #8f9a9d;
+$bg : #f1f1f1;
+
+ .filter {
+     width: 100%;
+     background: $bg;
+     padding: 20px 40px;
+     margin: 20px 0;
+     border-radius: 4px;
+
+     p {
+         display: inline-block;
+         width: 80%;
+         margin: 0;
+         font-weight: bold;
+         color: $color;
+     }
+
+     select {
+         float: right;
+     }
+ }
