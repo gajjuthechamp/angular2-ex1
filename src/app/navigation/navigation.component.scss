@@ -1,49 +1,60 @@
-$nav_background : #364245;
-$nav_background_active : #495f64;
-$nav_color : #d5ddde;
-$nav_color_active : #fff;
+$nav_background: #364245;
+$nav_background_active: #495f64;
+$nav_color: #d5ddde;
+$nav_color_active: #fff;
 $cart_count_bg: #f57306;
 
 nav {
-  width: 100%;
-  background: $nav_background;
-  color: $nav_color;
-  border-radius: 0 0 8px 8px;
+    width: 100%;
+    background: $nav_background;
+    color: $nav_color;
+    border-radius: 0 0 8px 8px;
+    ul {
+        padding: 0 0 0 10px;
+        margin: 0;
+        li {
+            display: inline-block;
+            position: relative;
 
-  ul {
-    padding: 0 0 0 10px;
-    margin: 0;
-
-    li {
-      display: inline-block;
+            &:hover {
+              .sub-nav {
+                display: block;
+                overflow-y: hidden;
+              }
+            }
+        }
     }
-  }
-
-  a {
-      color: $nav_color;
-      display: block;
-      padding: 10px;
-      text-decoration: none;
-
-      &:hover {
-        color: $nav_color_active;
-        background: $nav_background_active;
-      }
-   }
-
-  .cart {
-    float: right;
-
     a {
-      display: inline-block;
-      padding: 10px 20px;
+        color: $nav_color;
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        &:hover {
+            color: $nav_color_active;
+            background: $nav_background_active;
+        }
     }
-
-    .count {
-      background: $cart_count_bg;
-       border-radius: 0 0 8px 0;
+    .cart {
+        float: right;
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+        }
+        .count {
+            background: $cart_count_bg;
+            border-radius: 0 0 8px 0;
+        }
     }
-  }
+    .sub-nav {
+        display: none;
+        position: absolute;
+        background: $nav_background;
+        z-index: 99;
+        padding: 0;
+        width: 100%;
 
-
+        li {
+            display: block;
+        }
+    }
 }

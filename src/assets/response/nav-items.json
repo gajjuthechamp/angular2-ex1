@@ -1,0 +1,29 @@
+[
+    {
+  "title" : "Product",
+  "link" : "/product",
+  "desc" : "Product Listing Page"
+},{
+  "title" : "Cart",
+  "link" : "/cart",
+  "desc" : "Cart Page"
+},
+{
+  "title" : "My Account",
+  "link" : "/my-account",
+  "desc" : "My Account Page",
+  "subNav" : [
+        {
+          "title" : "Change Password",
+          "link" : "/change-password",
+          "desc" : "Change password Page"
+        },
+        {
+          "title" : "test page 2",
+          "link" : "/test2",
+          "desc" : "test Page"
+        }
+  ]
+}
+]
+

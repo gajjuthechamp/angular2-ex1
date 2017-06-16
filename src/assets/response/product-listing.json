@@ -1,0 +1,53 @@
+[
+{
+  "id" : "1",
+  "title" : "Bodum Brazil Coffee Press & Cup",
+  "link" : "/prod-1",
+  "desc" : "Product Listing Page",
+  "img" : "assets/images/products/jucer.png",
+  "price": 1000,
+  "tags": [
+    {
+      "title" : "Coffee & Tea",
+      "link" : "Cofffee Plungers"
+    }, {
+      "title" : "Coffee & Tea",
+      "link" : "Cofffee Plungers"
+    }
+  ]
+},{
+  "id" : "2",
+  "title" : "2 Bodum Brazil Coffee Press & Cup",
+  "link" : "/prod-2",
+  "desc" : "Product Listing Page",
+  "img" : "assets/images/products/jucer.png",
+  "price": 2000,
+  "tags": [
+    {
+      "title" : "2-1Coffee & Tea",
+      "link" : "2-1Cofffee Plungers"
+    }, {
+      "title" : "2-2Coffee & Tea",
+      "link" : "2-2Cofffee Plungers"
+    }
+  ]
+},
+{
+  "id" : "3",
+  "title" : "3 Bodum Brazil Coffee Press & Cup",
+  "link" : "/prod-3",
+  "desc" : "Product Listing Page 3",
+  "img" : "assets/images/products/jucer.png",
+  "price": 3000,
+  "tags": [
+    {
+      "title" : "3-1 Coffee & Tea",
+      "link" : "3-1 Cofffee Plungers"
+    }, {
+      "title" : "3-2 Coffee & Tea",
+      "link" : "3-2 Cofffee Plungers"
+    }
+  ]
+}
+]
+

@@ -1,11 +1,15 @@
 <nav>
-  <ul>
-    <li><a href="#">Product</a></li>
-    <li><a href="#">My Account</a></li>
-    <li><a href="#">Cart</a></li>
-    <li class="cart">
-      <a href="#" class='icon price'><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> £727</a><a href="#" class="count">3</a>
-    </li>
-  </ul>
+    <ul>
+        <li *ngFor="let navItem of navList;">
+            <a href="{{navItem.link}}" title="{{navItem.desc}}">{{navItem.title}}</a>
+            <ul class='sub-nav' *ngIf="navItem.subNav">
+                <li *ngFor="let subNavItem of navItem.subNav;">
+                    <a href="{{subNavItem.link}}" title="{{subNavItem.desc}}">{{subNavItem.title}}</a>
+                </li>
+            </ul>
+        </li>
+        <li class="cart">
+            <a href="#" class='icon price'><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> £727</a><a href="#" class="count">3</a>
+        </li>
+    </ul>
 </nav>
-
